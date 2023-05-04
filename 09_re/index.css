@@ -1,0 +1,88 @@
+html {
+    font-size: 16px;
+}
+.box {
+    margin-bottom: 50px;
+}
+.px {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.per-parent {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    position: relative;
+}
+.per-child {
+    width: 50%;
+    height: 50%;
+    background-color: skyblue;
+    position: absolute;
+    bottom: 0px;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 2rem;
+}
+
+.vw {
+    width: 20vw;
+    height: 30vw;
+    background-color: coral;
+}
+
+.vh {
+    width: 30vh;
+    height: 20vh;
+    background-color: gold;
+}
+
+:root {
+    --color-primary: blue;
+    --height-header: 100px;
+    --dark: #000;
+}
+/* div {
+    --dark: #000;
+} */
+
+.my-div {
+    background-color: var(--color-primary);
+    width: 200px;
+    height: var(--height-header);
+}
+.dark {
+    background-color: var(--dark);
+    width: 200px;
+    height: var(--height-header);
+}
+
+p {
+    width: 100px;
+    height: 100PX;
+    background-color: var(--dark);
+}
+/* li {
+    color: var(--color, blue);
+} */
+
+#media {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+
+@media (min-width: 400px) and (max-width:600px) {
+    #media {
+        width: 100%;
+        height: 100px;
+        background-color: greenyellow;
+    }
+}
