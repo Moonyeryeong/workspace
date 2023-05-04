@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .img-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: pink;
+            border: 1px solid plum;
+        }
+        .article-box {
+            margin: 5px;
+            padding: 10px;
+            background-color: pink;
+            border: 1px solid rgb(135, 34, 135);
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .box {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <h6 class="text-center">이달의 맛 BEST9</h6>
+    <section class="box"></section>
+    
+
+    <script>
+        
+        const icecreams = [
+        '내가 아인슈페너?!',
+        '엄마는 외계인',
+        '민트 초콜릿 칩',
+        '뉴욕 치즈케이크',
+        '아이스 초당옥수수',
+        '초콜릿 무스',
+        '체리쥬빌레',
+        '뮤! 넌 내거야',
+        '오레오 쿠키 앤 크림',
+        ];
+
+        for (let i = 0; i<icecreams.length; i++) {
+            const img = document.createElement('img')
+            img.setAttribute('src', `icecream${i+1}.png`)
+            img.classList.add('img-box')
+
+            const h3 = document.createElement('h3')
+            h3.textContent = `Top${i+1}`
+            h3.classList.add('text-center')
+        };
+
+        const div = document.createElement('div')
+        div.textContent = icecreams[i]
+        div.classList.add('text-center')
+
+        const article = document.createElement('article')
+        article.classList.add('article-box')
+        article.append(img)
+        article.append(h3)
+        article.append(div)
+
+        const box = document.querySelector('text-center')
+        bos.append(article)
+    </script>
+</body>
+</html>
