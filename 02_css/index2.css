@@ -1,0 +1,152 @@
+* {
+    /* font-family: 'Noto Sans KR', sans-serif; */
+    font-size: 20px;
+    /* background-color: aquamarine; */
+}
+body {
+    height: 1000px;
+    font-size: 2em;
+}
+#hello {
+    /* color: blue; */
+    /* color: #ff0000; */
+    /* color: rgb(red, green, blue); */
+    color: rgba(red, green, blue, alpha);
+}
+
+/* contain : 이미지가 잘리거나 찌그러지지 않는 한도내에서 제일 크게 설정됨. */
+/* cover: 이미지가 찌그러지지 않는 한도 내에서 제일 크게 설정됨
+       이미지의 가로,세로비가 요소와 다르다면 이미지를 세로 또는 가로 방향으로
+       잘라내에 빈 공간이 생기지 않도록 설정함. */
+
+#back {
+    /* background-image: url("cat.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: black; */
+    background-color: black;
+    color: yellow;
+    text-align: justify; 
+}
+
+#hi{
+    color: red;
+    font-size: 3rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#border {
+    width: 200px;
+    height: 200px;
+    /* border: 4px solid #000; */
+    border-width: 10px;
+    border-color: brown;
+    border-style: dotted;
+    border-bottom: 10px solid olivedrab;
+    background-color: yellow;
+    margin: 50px;
+    padding: 50px;
+    font-size: 16px;
+}
+
+#practice {
+    color: #000;
+    background-color: greenyellow;
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Bruno Ace', cursive;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    border: 4px solid #000;
+}
+
+/* .orange {
+    color: red;
+} */
+
+div li {
+    color: blue;
+}
+div > span {
+    font-weight: bold;
+}
+p ~ span {
+    color: blueviolet;
+}
+
+/* hover: 요소에 마우스가 올라가있을 경우 선택 */
+/* active: 요소에 마우스 클릭 또는 키보드 엔터가 눌리는 동안 선택 */
+/* visited: a태그에 사용, 다녀온 사이트 색상 변화 */
+#click:active {
+    color:violet;
+    font-size: 30px;
+}
+a:visited {
+    color: red;
+}
+
+.fruits span:first-child {
+    color: red;
+}
+.fruits h3:last-child {
+    color: violet;
+}
+
+.list span:nth-child(even) {
+    border: 1px solid blue;
+    padding: 5px;
+}
+.list span:nth-child(odd) {
+    border: 1px solid red;
+    padding: 5px;
+}
+
+.fruits :not(span) {
+    font-size: 30px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#circle1 {
+    background-color: brown;
+}
+#circle2 {
+    background-color: gold;
+    position: relative;
+    margin: 10px 20px 30px 40px;
+}
+#circle3 {
+    background-color: aqua;
+    position: absolute;
+    left:10px;
+    top: 10px;
+}
+#circle4 {
+    background-color: chocolate;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.cat {
+    position: absolute;
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+    /* transform: skew(30deg, 30deg); */
+
+    /* transform: rotate(10deg); */
+    
+    /* 가운데 중앙 정렬 */
+    top: 50%;
+    transform:translate(-50%, -50%);
+    left: 50%;
+}

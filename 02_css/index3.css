@@ -1,0 +1,89 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+#circle1 {
+    background-color: navy;
+    position: absolute;
+    left: 80px;
+    top: 130px;
+}
+#circle2 {
+    background-color: blue;
+    position: absolute;
+    left: 150px;
+    top: 180px;
+}
+#circle3 {
+    background-color: skyblue;
+    position: absolute;
+    left: 180px;
+    top: 230px;
+}
+#circle4 {
+    background-color: aqua;
+    position: absolute;
+    left: 200px;
+    top: 280px;
+}
+/* z-index는 position 속성이 relative나 absolute일 떄만 동작함 */
+/* 높은 정수가 제일 위로 올라옴.(양수,음수 가능) */
+#circle5{
+    background-color: aquamarine;
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    z-index: 10;
+}
+#circle6{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    left: 105px;
+    top: 150px;
+}
+#circle7{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    left: 105px;
+    top: 160px;
+}
+.grass{
+    width: 100px;
+    position: absolute;
+    width: 350px;
+    top: 320px;
+}
+
+.dog {
+    position: absolute;
+    transform: skewY(10deg);
+
+    /* transform: rotate(10deg); */
+}
+#d1{
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    z-index: 3;
+}
+#d2{
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    z-index: 2;
+}
+#d3{
+    width: 300px;
+    position: absolute;
+    left: 380px;
+    top: 15px;
+}

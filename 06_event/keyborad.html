@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: red;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <input id="keyboard"></input>
+    <input id="circle"></input>
+    <!-- 폼이벤트 -->
+    <form action="/" id="todo-form">
+        <input type="text" name="todo">
+        <button>Add</button>
+    </form>
+    <ul class="todos"></ul> -->
+    <input type="text" id="change-input">
+    <div class="intro"></div>
+    <div class="container">
+        <ul>
+            <li class="todo">1. 해야할 일</li>
+            <li class="todo">2. 해야할 일</li>
+            <li class="todo">3. 완료한 일</li>
+            <li class="todo">4. 완료한 일</li>
+            <li class="todo">5. 완료한 일</li>
+        </ul>
+    </div>
+    
+    <script>
+        // const keyboard = document.querySelector('#keyboard')
+        // keyboard.addEventListener('keydown', function(event) {
+        //     console.log(event.code)
+        //     if (event.code == 'ArrowUp') {
+        //         console.log('up')
+        //     }
+        // })
+
+        // const circle = document.querySelector('#circle')
+        // circle.addEventListener('keydown', function(e) {
+        //     if(e.code == 'ArrowRight') {
+        //         circle.style.left = '50px';
+        //     }
+        // })
+
+
+        const i = document.querySelectorAll('li')
+        for(let li of i) {
+            li.classList.toggle('done')
+            li.classList.toggle('todo')
+        }
+    </script>
+</body>
+</html>
